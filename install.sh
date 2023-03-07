@@ -19,7 +19,7 @@ yes | sudo pacman -S ttf-hack-nerd
 
 # ----- NeoVim 플러그인 사용을 위한 것 -----
 yes | sudo pacman -S nodejs
-yes | sudo pacman -S nodejs
+yes | sudo pacman -S yarn
 
 
 # ----- Microcode for Intel/AMD -----
@@ -54,11 +54,11 @@ yes | sudo pacman -S xfce4-screenshooter                    # screenshooter
 yes | sudo pacman -S scrot                                  # screenshooter
 yes | sudo pacman -S mate-calc                              # Mate calculator
 yes | sudo pacman -S libreoffice-still                      # Free office application
-yes | sudo pacman -S okular                                 # PDF viewer
+sudo pacman -S okular                                       # PDF viewer
 yes | sudo pacman -S aria2                                  # Command-line download utility
 yes | sudo pacman -S cheese 	    		                # Camera
 yes | sudo pacman -S parcellite				                # Clipboard tool (Shortcut : Ctrl+Alt+H)
-# yes | sudo pacman -S unar                                   # unzip alternater                        잘 안됨(?)
+yes | sudo pacman -S unar                                   # unzip alternater
 yes | sudo pacman -S barrier                                # KVM software
 yes | sudo pacman -S trash-cli                              # trash-cli
 yes | sudo pacman -S xtrlock			            	        # Lock display and mouse
@@ -66,6 +66,7 @@ yes | sudo pacman -S xtrlock			            	        # Lock display and mouse
 # ----- man -----
 yes | sudo pacman -S tldr                                   # man alternater
 yes | sudo pacman -S man-db                                 # The online manual database.
+yes | sudo pacman -S glibc                                  # The online manual database.
 yes | sudo pacman -S ncdu                                   # du alternater, NCurses Disk Usage
 
 # ----- Hangul input -----
@@ -82,7 +83,7 @@ yes | sudo pacman -S cscope                                 # cscope
 yes | sudo pacman -S clang                                  # clang & clang-format
 yes | sudo pacman -S python-pip                             # python
 yes | sudo pacman -S gdb                                    # 디버거 
-yes | sudo pacman -S virtualbox                             # Virtual machine
+sudo pacman -S virtualbox                                   # Virtual machine
 yes | sudo pacman -S rsync                                  # one way
 yes | sudo pacman -S unison                                 # both way
 
