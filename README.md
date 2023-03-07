@@ -24,13 +24,7 @@ pacman -S zsh
 ```
 * oh-my-zsh 설치
 ```swift
-git clone https://aur.archlinux.org/oh-my-zsh-git.git
-```
-```swift
-cd oh-my-zsh-git
-```
-```swift
-makepkg -si
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 ```
 * zsh를 기본 쉘로 설정
 ```swift
