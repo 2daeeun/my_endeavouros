@@ -54,7 +54,8 @@ yes | sudo pacman -S xfce4-screenshooter                    # screenshooter
 yes | sudo pacman -S scrot                                  # screenshooter
 yes | sudo pacman -S mate-calc                              # Mate calculator
 yes | sudo pacman -S libreoffice-still                      # Free office application
-sudo pacman -S okular                                       # PDF viewer
+yes | sudo pacman -S phonon-qt5-gstreamer                   # okular 설치를 위한 의존성 패키지
+yes | sudo pacman -S okular                                 # PDF viewer
 yes | sudo pacman -S aria2                                  # Command-line download utility
 yes | sudo pacman -S cheese 	    		                # Camera
 yes | sudo pacman -S parcellite				                # Clipboard tool (Shortcut : Ctrl+Alt+H)
@@ -83,7 +84,7 @@ yes | sudo pacman -S cscope                                 # cscope
 yes | sudo pacman -S clang                                  # clang & clang-format
 yes | sudo pacman -S python-pip                             # python
 yes | sudo pacman -S gdb                                    # 디버거 
-sudo pacman -S virtualbox                                   # Virtual machine
+yes | sudo pacman -S virtualbox-host-dkms                   # Virtual machine
 yes | sudo pacman -S rsync                                  # one way
 yes | sudo pacman -S unison                                 # both way
 
@@ -102,7 +103,7 @@ yes | sudo pacman -Rs xiterm+thai
 yes | sudo pacman -Rs xterm 
 yes | sudo pacman -Rs uxterm 
 yes | sudo pacman -Rs firefox
-sudo rm -rf /home/leedaeeun/.mozilla
+sudo rm -rf ~/.mozilla
 
 # Fin
 yes | sudo pacman -Syu
