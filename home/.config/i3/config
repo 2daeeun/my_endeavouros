@@ -222,12 +222,12 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 bindsym $mod+Tab exec terminator
 bindsym $mod+Return exec terminator
 # bindsym $mod+d exec --no-startup-id rofi -show drun -font "DejaVu Sans 18" -show-icons
-bindsym $mod+n exec x-terminal-emulator -e nmtui
+bindsym $mod+n exec terminator -e nmtui
 bindsym $mod+m exec pavucontrol
 bindsym $mod+b exec google-chrome-stable
 bindsym $mod+semicolon exec thunar
 bindsym XF86Calculator exec mate-calc
-bindsym $mod+u exec x-terminal-emulator -e ~/.config/i3/monitor_choose.sh
+bindsym $mod+u exec terminator -e ~/.config/i3/monitor_choose.sh
 
 
 
@@ -255,9 +255,9 @@ set $ws10 "10"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-#workspace $ws1 output VGA-0
-#workspace $ws2 output VGA-0
-#workspace $ws3 output HDMI-0
+workspace $ws1 output eDP
+workspace $ws2 output DisplayPort-3
+workspace $ws3 output DisplayPort-2
 #workspace $ws4 output HDMI-0
 #workspace $ws5 output HDMI-0
 
@@ -270,7 +270,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id numlockx on
 exec --no-startup-id ~/.screenlayout/monitor.sh
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
+exec --no-startup-id sleep 1 && feh --bg-fill ~/Documents/github/my_endeavouros/home/.config/i3/thinkpad_wallpaper.png
 exec --no-startup-id xset s 480 dpms 600 600 600
 # Desktop notifications
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
@@ -283,6 +283,8 @@ exec_always xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1 &
 exec_always xinput set-prop 12 312 0, 1, 0 &
 
+exec_always tlp start a
+exec --no-startup-id discord
 
 
 
