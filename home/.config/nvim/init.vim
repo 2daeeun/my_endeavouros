@@ -1,8 +1,6 @@
 "==========기본 설정값==========
 set syntax=on			                            "구문강조
-" set tags=./tags,tags,../tags,/usr/tags            " 자신의 디렉토리 및 상위 디렉토리 경로
-" set tags+=/usr/src/linux-2.4.18-3/include/linux/tags    " kernel의 경로 추가
-set tags+=/usr/include/tags                         "include 의 경로 추가
+set tags=./tags,tags,../tags,/usr/tags              " 자신의 디렉토리 및 상위 디렉토리 경로
 set encoding=UTF-8		                            "한글 깨짐 방지 
 set fileencodings=utf-8,euc-kr,cp949                "한글 사용
 set termguicolors		                            "트루 컬러 지원
